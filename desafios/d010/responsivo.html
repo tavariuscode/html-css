@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>testando Responsividade</title>
+</head>
+
+    
+    <style>
+        
+        :root{
+            --color-text: #000;
+            --background-color: #fff;
+            --background-color2: #f2f2f2;
+        }
+
+        body{
+            background: var(--background-color);
+            color: var(--color-text);
+            
+
+            
+        }
+
+        #darkmodetoggle:checked + .container  {
+            --color-text: #fff;
+            --background-color: #000;
+            --background-color2: #222;
+
+            background: var(--background-color);
+            color: var(--color-text);
+
+        }
+
+        
+        .darkmodelabel{
+            cursor:pointer;
+        }
+
+        .darkmodelabel:after{
+            content: 'off';
+        }
+
+        .container{
+            
+            margin: auto;
+        }
+
+        #darkmodeToggle{
+            display: none;
+        }
+
+        .main{
+            width: 100%;
+            position: absolute;
+        }
+           
+            
+            
+
+        img{
+            width:100%;
+        }
+    
+    </style>
+    <body>
+    <input type="checkbox" id="darkmodetoggle">
+    <label for="darkmodetoggle" class="darkmodelabel">Dark Mode</label>
+    <main>
+        <div class="container">
+        <h1>Testando Responsividade</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia atque optio natus cupiditate tempore reiciendis suscipit iusto harum ipsam quod, veniam blanditiis, officia in, sed deleniti aliquid doloremque voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur recusandae ab, harum nesciunt atque dolore amet modi ducimus dolor eveniet sit similique cum id magnam nemo pariatur aut rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis mollitia laudantium ducimus cupiditate excepturi obcaecati officiis nesciunt quaerat temporibus velit, inventore neque quam omnis voluptatum libero, praesentium nihil sapiente quo?</p>
+
+        <img src="imagens/irina-blok.jpg" alt="">
+
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum mollitia atque optio natus cupiditate tempore reiciendis suscipit iusto harum ipsam quod, veniam blanditiis, officia in, sed deleniti aliquid doloremque voluptatum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit aspernatur recusandae ab, harum nesciunt atque dolore amet modi ducimus dolor eveniet sit similique cum id magnam nemo pariatur aut rerum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis mollitia laudantium ducimus cupiditate excepturi obcaecati officiis nesciunt quaerat temporibus velit, inventore neque quam omnis voluptatum libero, praesentium nihil sapiente quo?</p>
+
+        <picture>
+            <source media="(max-width:600px )" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem suscipit cumque voluptates, commodi consequuntur ipsum laudantium eum debitis, esse labore facere aliquam natus at distinctio doloremque ad, sit cupiditate dignissimos? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem ut ipsa et quo at repellat, voluptas, iure cumque ab odio dolorem! Iure sit rerum numquam doloremque sed voluptatibus mollitia nihil. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis pariatur numquam culpa odit voluptas libero deleniti? Ad fugiat explicabo asperiores molestias eum consequuntur, quam inventore, commodi, autem voluptatem iure ratione.</p>
+    </div>
+    </main>
+    
+</body>
+</html>
