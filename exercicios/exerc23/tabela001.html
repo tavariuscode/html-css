@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body{
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            background-color: aqua;
+        }
+        table{
+            width: 1200px;
+            height: 300px;
+            border-collapse: collapse;
+            
+        }
+        
+        td{
+            padding: 20px;
+            text-align: right;
+            border: 2px solid red
+            
+            
+            
+            
+        }
+
+        td.linha{
+            background-color: crimson;
+            
+
+        }
+
+        tr.linha{
+            background-color: azure;
+        }
+
+        td.dado{
+            background-color: beige;
+        }
+
+        td.retorno{
+            background-color: rgb(184, 150, 150);
+        }
+
+        tr.linha1{
+            background-color: chartreuse;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr class="linha1"> 
+            <td> Paciente 01</td>
+            <td>Paciente 02</td>
+            <td class="linha">Paciente 03</td>
+            <td>Paciente 04</td>
+            <td>Paciente 05</td>
+        </tr>
+
+        <tr>
+            <td class="dado">Retorno paciente 01</td>
+            <td>Retorno paciente 02</td>
+            <td class="retorno">Retorno paciente 03</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
